@@ -5,15 +5,21 @@
   "author": "joe_tian_forexco_home_macmini <j.tian@forexco.com.au>",
   "license": "MIT",
   "scripts": {
-    "dev": "node dist/index.js",
+    "start": "node dist/index.js",
+    "dev": "nodemon ./src/index.ts",
     "build": "tsc --build"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.588.0",
+    "@aws-sdk/s3-request-presigner": "^3.588.0",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "nodemon": "^3.1.2",
     "prettier": "^3.3.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
   }
 }
