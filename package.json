@@ -1,0 +1,19 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "joe_tian_forexco_home_macmini <j.tian@forexco.com.au>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node dist/index.js",
+    "build": "tsc --build"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "prettier": "^3.3.0",
+    "typescript": "^5.4.5"
+  }
+}
