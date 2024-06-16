@@ -58,3 +58,19 @@ export async function getDownloadSignedUrl(url: string) {
     console.log(error);
   }
 }
+
+export async function getUsersTest(req: Request, res: Response) {
+  try {
+    res.send(['dfdf']);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+export async function getSuperTest(req: Request, res: Response) {
+  try {
+    res.send([]);
+  } catch (error) {
+    console.log(error);
+  }
+}
