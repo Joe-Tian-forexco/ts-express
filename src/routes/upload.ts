@@ -1,10 +1,12 @@
 import { Router } from "express";
-import { getBuckets, getPresignedUrl } from "../services/upload";
+import { getBuckets, getUploadSignedUrl, getDownloadSignedUrl } from "../services/upload";
 
 const router = Router();
 
-router.get("/presign-url", getPresignedUrl);
+router.get("/upload-presign-url", getUploadSignedUrl);
 
 router.get("/buckets", getBuckets);
+
+router.get("/download-presign-url", getDownloadSignedUrl);
 
 export default router;
